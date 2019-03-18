@@ -1,3 +1,7 @@
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
+from Bio import SeqIO
+
 def parse_abayesqr_output(input_text, output_fasta):
     with open(input_text) as input_file:
         lines = input_file.readlines()
